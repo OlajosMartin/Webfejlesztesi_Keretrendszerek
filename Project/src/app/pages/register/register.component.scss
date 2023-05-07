@@ -1,0 +1,30 @@
+.div-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+form div{
+    padding: 5px;
+}
+
+.main{
+    height: 100vh;
+}
+
+form{
+    display: inline-grid;
+    width: 40%;
+    align-self: center;
+}
+
+.formClass{
+    width: 100%;
+    display: inline-grid;
+}
+
+.buttons{
+    padding: 5px;
+}

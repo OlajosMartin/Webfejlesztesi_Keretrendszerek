@@ -1,0 +1,45 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+<app-menu (selectedPage)="changePage($event)" [currentPage]="page" *ngIf="page" (onCloseSidenav)="onClose($event, sidenav)"></app-menu>
+</mat-sidenav>
+<mat-sidenav-content>
+  <mat-toolbar color="primary">
+    <div fxHide.gt-xs>
+    <button mat-icon-button (click)="onToggleSidenav(sidenav)">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+    <div></div>
+    <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+      <ul fxLayout fxLayoutGap="10px" class="nav-items">
+        <li><a routerLink="/main">Főoldal</a></li>
+        <li><a routerLink="/product">Termékek</a></li>
+        <li><a routerLink="/contact">Kapcsolat</a></li>
+        <li><a routerLink="/login">Bejelentkezés</a></li>
+        <li><a routerLink="/register">Regisztráció</a></li>
+      </ul>
+    </div>
+  </mat-toolbar>
+<!--<ng-container [ngSwitch]="page">
+  <ng-container *ngSwitchCase="'main'">
+    <div class="main">
+      <app-main></app-main>
+    </div>
+  </ng-container>
+  <ng-container *ngSwitchCase="'product'">
+    <app-product></app-product>
+  </ng-container>
+  <ng-container *ngSwitchCase="'contact'">
+    <app-contact></app-contact>
+  </ng-container>
+  <ng-container *ngSwitchCase="'register'">
+    <app-register></app-register>
+  </ng-container>
+  <ng-container *ngSwitchCase="'login'">
+    <app-login></app-login>
+  </ng-container>
+</ng-container>-->
+
+<router-outlet></router-outlet>
+</mat-sidenav-content>
+</mat-sidenav-container>

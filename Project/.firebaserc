@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "webfejlesztesiproject": {
+      "hosting": {
+        "Project": [
+          "webfejlesztesiproject"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "webfejlesztesiproject"
+  }
+}

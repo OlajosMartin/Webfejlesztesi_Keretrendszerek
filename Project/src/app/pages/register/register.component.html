@@ -1,0 +1,25 @@
+<div class="main">
+<div class="div-flex">
+    <h1>Regisztráció</h1>
+    <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+        <div formGroupName="name" class="formClass">
+            <mat-form-field>
+                <mat-label for="lastname">Vezetéknév: </mat-label>
+                <input matInput type="text" formControlName="lastname">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label for="firstname">Keresztnév: </mat-label>
+                <input matInput type="text" formControlName="firstname">
+            </mat-form-field>
+        </div>
+    <mat-form-field><mat-label for="email">Email: </mat-label><input matInput type="text" formControlName="email"></mat-form-field>
+    <mat-form-field><mat-label for="password">Jelszó: </mat-label><input matInput type="password" formControlName="password"></mat-form-field>
+    <mat-form-field><mat-label for="password2">Jelszó újra: </mat-label><input matInput type="password" formControlName="password2"></mat-form-field>
+    
+    <div>
+        <span class="buttons"><button mat-raised-button color="primary" type="submit">Regisztráció</button></span>
+        <span class="buttons"><button mat-raised-button color="primary" (click)="goBack()">Vissza</button></span>
+    </div>
+</form>
+</div>
+</div>

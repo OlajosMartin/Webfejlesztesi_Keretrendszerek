@@ -1,0 +1,18 @@
+<div>
+    <select #chosenProduct (change)="reload()">
+        <option value="1">Első típusú szőnyeg</option>
+        <option value="2">Második típusú szőnyeg</option>
+        <option value="3">Harmadik típusú szőnyeg</option>
+        <option value="4">Negyedik típusú szőnyeg</option>
+        <option value="5">Ötödik típusú szőnyeg</option>
+        <option value="6">Hatodik típusú szőnyeg</option>
+    </select>
+
+    <div class="container">
+        <div class="break"></div>
+        <img class="productImg" [src]="'assets/'+ chosenProduct.value +'.jpg'" alt="Nem jeleníthető meg a kép.">
+        <div class="break"></div>
+        <input type="button" value="Megrendel">
+    </div>
+</div>
+

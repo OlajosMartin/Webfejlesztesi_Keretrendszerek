@@ -1,0 +1,20 @@
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+span{
+    padding: 5px;
+}
+
+mat-form-field{
+    width: 30%;
+}
+
+.main{
+    height: 100vh;
+    align-items: center;
+}
